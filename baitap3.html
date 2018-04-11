@@ -181,63 +181,84 @@
             <tbody>
               <tr>
                 <td>1</td>
-                <td><input type="number" name="proceeds" value="0"></td>
-                <td><input type="number" name="cost" value="1000"></td>
+                <td><input type="number" class="proceed" value="0"></td>
+                <td><input type="number" class="cost" value="1000"></td>
+                <td class="cash_flow" align="center"></td>
+                <td class="present_value" align="center"></td>
               </tr>
               <tr>
                 <td>2</td>
-                <td><input type="number" name="proceeds" value="1500"></td>
-                <td><input type="number" name="cost" value="750"></td>
+                <td><input type="number" class="proceed" value="1500"></td>
+                <td><input type="number" class="cost" value="750"></td>
+                <td class="cash_flow" align="center"></td>
+                <td class="present_value" align="center"></td>
               </tr>
               <tr>
                 <td>3</td>
-                <td><input type="number" name="proceeds" value="3500"></td>
-                <td><input type="number" name="cost" value="750"></td>
+                <td><input type="number" class="proceed" value="3500"></td>
+                <td><input type="number" class="cost" value="750"></td>
+                <td class="cash_flow" align="center"></td>
+                <td class="present_value" align="center"></td>
               </tr>
               <tr>
                 <td>4</td>
-                <td><input type="number" name="proceeds" value="4000"></td>
-                <td><input type="number" name="cost" value="750"></td>
+                <td><input type="number" class="proceed" value="4000"></td>
+                <td><input type="number" class="cost" value="750"></td>
+                <td class="cash_flow" align="center"></td>
+                <td class="present_value" align="center"></td>
               </tr>
               <tr>
                 <td>5</td>
-                <td><input type="number" name="proceeds" value="4500"></td>
-                <td><input type="number" name="cost" value="750"></td>
+                <td><input type="number" class="proceed" value="4500"></td>
+                <td><input type="number" class="cost" value="750"></td>
+                <td class="cash_flow" align="center"></td>
+                <td class="present_value" align="center"></td>
               </tr>
               <tr>
                 <td>6</td>
-                <td><input type="number" name="proceeds" value="4000"></td>
-                <td><input type="number" name="cost" value="850"></td>
+                <td><input type="number" class="proceed" value="4000"></td>
+                <td><input type="number" class="cost" value="850"></td>
+                <td class="cash_flow" align="center"></td>
+                <td class="present_value" align="center"></td>
               </tr>
               <tr>
                 <td>7</td>
-                <td><input type="number" name="proceeds" value="4000"></td>
-                <td><input type="number" name="cost" value="850"></td>
+                <td><input type="number" class="proceed" value="4000"></td>
+                <td><input type="number" class="cost" value="850"></td>
+                <td class="cash_flow" align="center"></td>
+                <td class="present_value" align="center"></td>
               </tr>
               <tr>
                 <td>8</td>
-                <td><input type="number" name="proceeds" value="3500"></td>
-                <td><input type="number" name="cost" value="850"></td>
+                <td><input type="number" class="proceed" value="3500"></td>
+                <td><input type="number" class="cost" value="850"></td>
+                <td class="cash_flow" align="center"></td>
+                <td class="present_value" align="center"></td>
               </tr>
               <tr>
                 <td colspan="4">
-                    NPV : 
                     <div class="row">
                         <label class="col-2">i </label> 
                         <div class="input-group col-2">
-                            <input type="number" value="0.06">
+                            <input class="rate" type="number" value="0.06">
                             <span class="input-group-addon">%</span> 
                         </div>
                     </div>
                     <div class="row">
                         <label class="col-2">N </label>
                         <div class="input-group col-2">
-                            <input type="number" value="8">
+                            <input disabled class="month" type="number" value="8">
                             <span class="input-group-addon">tháng</span>
                         </div>
                     </div>
                     <br>
-                    <button class="btn btn-primary">Caculate</button>
+                    <button name="calculate_npv" type="button" class="btn btn-primary">Caculate</button>
+                </td>
+                <td>
+                    <div align="center">
+                        <label>NPV = </label>
+                        <span class="npv"></span>
+                    </div>
                 </td>
               </tr>
             </tbody>
